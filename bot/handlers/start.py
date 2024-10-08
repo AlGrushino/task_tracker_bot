@@ -22,5 +22,5 @@ async def cmd_start_2(message: Message):
 @start_router.message(F.text == "/start_3")
 async def cmd_start_3(message: Message):
     await message.answer(
-        "Запуск сообщения по команде /start_3 используя магический фильтр F.text!"
+        "/start_3 используя магический фильтр F.text!"
     )
