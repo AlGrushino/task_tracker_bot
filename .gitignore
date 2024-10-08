@@ -163,3 +163,4 @@ cython_debug/
 
 # Project
 marks.md
+config.py
