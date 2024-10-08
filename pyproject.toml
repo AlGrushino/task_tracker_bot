@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "task-tracker-bot"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "task_tracker_bot"}]
+
+[tool.poetry.dependencies]
+python = "3.11.10"
+aiogram = "^3.13.1"
+black = "^24.10.0"
+deptry = "^0.20.0"
+apscheduler = "^3.10.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
