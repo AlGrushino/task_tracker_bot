@@ -12,6 +12,8 @@ aiogram = "^3.13.1"
 black = "^24.10.0"
 deptry = "^0.20.0"
 apscheduler = "^3.10.4"
+sqlalchemy = "^2.0.35"
+sqlalchemy-migrate = "^0.13.0"
 
 
 [build-system]

@@ -1,6 +1,20 @@
 import json
+from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy import Column, Integer, String
 
 # from aiogram.types.message import Message
+
+
+class Base(DeclarativeBase):
+    pass
+
+
+class User(Base):  # mb better call it's Person
+    __tablename__ = "Users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String)
+    age = Column(Integer)
 
 
 def check_id(
