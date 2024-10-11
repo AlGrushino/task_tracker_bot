@@ -165,3 +165,4 @@ cython_debug/
 marks.md
 config.py
 users.json
+*.db
