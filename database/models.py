@@ -1,6 +1,11 @@
+import sqlalchemy as sa
+from config import Config
 import json
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import Column, Integer, String
+
+engine = sa.create_engine(Config.SQLALCHEMY_DATABASE_URI)
+
 
 # from aiogram.types.message import Message
 
@@ -9,12 +14,11 @@ class Base(DeclarativeBase):
     pass
 
 
-class User(Base):  # mb better call it's Person
+class User(Base):
     __tablename__ = "Users"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String)
-    age = Column(Integer)
+    name = Column(String(50))
 
 
 def check_id(
